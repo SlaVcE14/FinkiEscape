@@ -16,6 +16,8 @@ namespace FinkiEscapa
         public Classroom classRoom;
         public BreakerBox breakerBox;
         public PCDisplay pcDisplay;
+        public Exit exit;
+        public Keypad keypad;
 
         public bool isPowerOn = false;
         
@@ -32,10 +34,14 @@ namespace FinkiEscapa
             classRoom = new Classroom(this);
             breakerBox = new BreakerBox(this);
             pcDisplay = new PCDisplay(this);
+            exit = new Exit(this);
+            keypad = new Keypad(this);
 
             Controls.Add(classRoom);
             Controls.Add(breakerBox);
             Controls.Add(pcDisplay);
+            Controls.Add(exit);
+            Controls.Add(keypad);
 
 
             classRoom.BackColor = Color.FromArgb(100, Color.Black);
@@ -71,7 +77,6 @@ namespace FinkiEscapa
                     MainScene scene = new MainScene();
                     Hide();
                     scene.Show();
-                    
 
                 }
             }
@@ -86,14 +91,16 @@ namespace FinkiEscapa
             }
 
 
-                if (classRoom.Visible)
+            if (classRoom.Visible)
                 classRoom.keyDown(e);
             if (pcDisplay.Visible)
                 pcDisplay.keyDown(e);
             if (breakerBox.Visible)
                 breakerBox.keyDown(e);
-
-
+            if (exit.Visible)
+                exit.keyDown(e);
+            if (keypad.Visible)
+                keypad.keyDown(e);
         }
 
         private void GameForm_KeyPress(object sender, KeyPressEventArgs e)
