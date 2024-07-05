@@ -20,9 +20,10 @@ namespace FinkiEscapa
         public Classroom(GameForm main)
         {
             InitializeComponent();
+            
             this.main = main;
 
-            DoubleBuffered = true;
+            this.DoubleBuffered = true;
 
             //panel1.Parent = pictureBox1;
             dialogPanel.BackColor = Color.FromArgb(100, Color.Black);

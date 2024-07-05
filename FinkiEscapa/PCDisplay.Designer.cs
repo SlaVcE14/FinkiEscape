@@ -116,7 +116,7 @@
             this.dialogBtn.Name = "dialogBtn";
             this.dialogBtn.Size = new System.Drawing.Size(75, 23);
             this.dialogBtn.TabIndex = 1;
-            this.dialogBtn.Text = "ok";
+            this.dialogBtn.Text = "ОК";
             this.dialogBtn.UseVisualStyleBackColor = true;
             this.dialogBtn.Click += new System.EventHandler(this.dialogBtn_Click);
             // 
