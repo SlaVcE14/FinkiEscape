@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Timers;
 
 namespace FinkiEscapa
 {
@@ -14,29 +15,29 @@ namespace FinkiEscapa
     {
         List<Question> allQuestions = new List<Question>();
         List<Question> questions = new List<Question>();
+        
         int id = -1;
         int numQestions = 10;
         int numCorrect = 0;
         int numCorrectToPass = 5;
 
-
-
-
-
         Question currentQuestion;
 
-
-
+        private System.Timers.Timer timer;
+        
         public IQQuiz()
         {
             InitializeComponent();
             init();
+            timer = new System.Timers.Timer(1500);
+            timer.Elapsed += OnTimedEvent;
+            timer.AutoReset = false;
             nextQuestion();
         }
-
-
+        
         private void nextQuestion()
         {
+            
             id++;
 
             if (id >= questions.Count)
@@ -57,14 +58,42 @@ namespace FinkiEscapa
             answer3.Text = currentQuestion.answers[2];
             answer4.Text = currentQuestion.answers[3];
 
+            ResetButtonColors();
+
         }
 
-        private void guess(int answer)
+        
+        private void guess(int answer, Button selectedAnswer)
         {
+            List<Button> buttons = new List<Button>() { answer1,answer2,answer3,answer4};
+
             if (questions[id].correct == answer)
             {
                 numCorrect++;
+                selectedAnswer.BackColor = Color.Green;
             }
+            else
+            {
+                selectedAnswer.BackColor = Color.Red;
+            }
+
+            timer.Start();
+        }
+
+        private void OnTimedEvent(object sender, ElapsedEventArgs e)
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                nextQuestion();
+            });
+        }
+
+        private void ResetButtonColors()
+        {
+            answer1.BackColor = SystemColors.Control;
+            answer2.BackColor = SystemColors.Control;
+            answer3.BackColor = SystemColors.Control;
+            answer4.BackColor = SystemColors.Control;
         }
 
 
@@ -76,6 +105,7 @@ namespace FinkiEscapa
             this.DialogResult = isPass? DialogResult.OK : DialogResult.Cancel;
         }
 
+        
         private void init()
         {
             addQuestion("Кој број логички следува\n2, 5, 8, 11, ?", "8", "12", "14", "16",2);
@@ -117,29 +147,27 @@ namespace FinkiEscapa
 
         private void answer1_Click(object sender, EventArgs e)
         {
-            guess(0);
-            nextQuestion();
+            guess(0, answer1);
+            
         }
 
         private void answer2_Click(object sender, EventArgs e)
         {
-            guess(1);
-            nextQuestion();
+            guess(1, answer2);
+            
         }
 
         private void answer3_Click(object sender, EventArgs e)
         {
-            guess(2);
-            nextQuestion();
+            guess(2, answer3);
         }
 
         private void answer4_Click(object sender, EventArgs e)
         {
-            guess(3);
-            nextQuestion();
+            guess(3, answer4);
         }
     }
-
+   
     class Question
     {
 

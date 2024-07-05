@@ -21,9 +21,7 @@ namespace FinkiEscapa
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-
-            
-
+            this.DoubleBuffered = true;
             mainMenu = new MainMenuScene(this);
             howToPlay = new HowToPlayScene(this);
             credits = new CreditsScene(this);

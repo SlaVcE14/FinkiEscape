@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.questionTxt = new System.Windows.Forms.Label();
             this.counter = new System.Windows.Forms.Label();
             this.answer1 = new System.Windows.Forms.Button();
             this.answer2 = new System.Windows.Forms.Button();
             this.answer3 = new System.Windows.Forms.Button();
             this.answer4 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // questionTxt
@@ -102,6 +104,10 @@
             this.answer4.UseVisualStyleBackColor = true;
             this.answer4.Click += new System.EventHandler(this.answer4_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 3000;
+            // 
             // IQQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,5 +133,6 @@
         private System.Windows.Forms.Button answer2;
         private System.Windows.Forms.Button answer3;
         private System.Windows.Forms.Button answer4;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -10,30 +10,20 @@ namespace FinkiEscapa
     {
         public readonly static List<string> startGameDialogs = new List<string>() 
         {
-            "str1",
-            "blablablablablablba",
-            "this is a very very very very very very very very very very very long text",
-            "this is a super long text 123 very very long text bla bla bla bal abcdefgjhklmnoasda 12343456789 test 123 long text",
-            "str5",
-            "hi"
+            "Добредојде драг играчу во EscapeFinki. Ти си заробен во лабораторија 13 на ТМФ.",
+            "Твојата задача е успешно да побегнеш од лабораторија 13, каде што бравата е електронски заклучена.",
+            "Има само еден начин како да побегнеш од овде...",
+            "Треба да го вклучиш компјутерот и да ја хакираш бравата за успешно да побегнеш.",
+            "Вклучи го компјутерот пред себе и започни со хакирањето."
+            
 
         };
 
         public readonly static List<string> powerOffDialog = new List<string>()
         {
-            "нема струја",
-            "уклуци струја",
-            "hi"
-
-        };
-
-        public static List<string> finishLevelMessage = new List<string>()
-        {
-            "lvl1",
-            "lvl2",
-            "lvl3",
-            "lvl4",
-            "lvl5"
+            "Хмм.. компјутерот не сака да се вклучи, изгледа нема струја во просторијата.. ",
+            "Треба да ја вклучиш струјата во просторијата и отпосле да го направиш бараното."
+            
 
         };
     }
