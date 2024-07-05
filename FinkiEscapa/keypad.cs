@@ -18,8 +18,10 @@ namespace FinkiEscapa
         public Keypad(GameForm main)
         {
             InitializeComponent();
+
             this.main = main;
             Visible = false;
+          
 
         }
 
@@ -33,6 +35,7 @@ namespace FinkiEscapa
         {
 
         }
+
 
     }
 }

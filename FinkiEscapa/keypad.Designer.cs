@@ -37,10 +37,10 @@
             this.backBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.backBtn.Location = new System.Drawing.Point(25, 583);
+            this.backBtn.Location = new System.Drawing.Point(26, 580);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(144, 57);
-            this.backBtn.TabIndex = 3;
+            this.backBtn.TabIndex = 4;
             this.backBtn.Text = "Назад";
             this.backBtn.UseVisualStyleBackColor = false;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);

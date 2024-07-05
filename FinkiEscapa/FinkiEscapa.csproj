@@ -64,7 +64,6 @@
     <Compile Include="CreditsScene.Designer.cs">
       <DependentUpon>CreditsScene.cs</DependentUpon>
     </Compile>
-    <Compile Include="DialogQueue.cs" />
     <Compile Include="Exit.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +93,12 @@
     </Compile>
     <Compile Include="IQQuiz.Designer.cs">
       <DependentUpon>IQQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keypad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Keypad.Designer.cs">
+      <DependentUpon>Keypad.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenuScene.cs">
       <SubType>UserControl</SubType>
@@ -133,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IQQuiz.resx">
       <DependentUpon>IQQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keypad.resx">
+      <DependentUpon>Keypad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuScene.resx">
       <DependentUpon>MainMenuScene.cs</DependentUpon>
