@@ -27,10 +27,11 @@ namespace FinkiEscapa
 
             //panel1.Parent = pictureBox1;
             dialogPanel.BackColor = Color.FromArgb(100, Color.Black);
-            dialogs = StringData.startGameDialogs;
+            dialogs = new List<string>(StringData.startGameDialogs);
+            Focus();
         }
 
-        
+
 
         private void goToBreakerBox()
         {
@@ -48,6 +49,12 @@ namespace FinkiEscapa
 
             Visible = false;
             main.pcDisplay.Visible = true;
+        }
+
+        private void goToExit()
+        {
+            Visible = false;
+            main.exit.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -75,7 +82,7 @@ namespace FinkiEscapa
 
         private void showPowerOffDialog()
         {
-            dialogs = StringData.powerOffDialog;
+            dialogs = new List<string>(StringData.powerOffDialog);
             dialogPanel.Visible = true;
             nextDialog();
         }
@@ -109,6 +116,13 @@ namespace FinkiEscapa
             goToBreakerBox();
         }
 
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            goToExit();
+        }
+
+
+
         public void keyDown(KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
@@ -119,5 +133,7 @@ namespace FinkiEscapa
                 }
             }
         }
+
+
     }
 }

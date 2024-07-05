@@ -65,6 +65,12 @@
       <DependentUpon>CreditsScene.cs</DependentUpon>
     </Compile>
     <Compile Include="DialogQueue.cs" />
+    <Compile Include="Exit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exit.Designer.cs">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreditsScene.resx">
       <DependentUpon>CreditsScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exit.resx">
+      <DependentUpon>Exit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -177,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mainMenuBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitDoor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

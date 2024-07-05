@@ -71,6 +71,16 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ExitDoor {
+            get {
+                object obj = ResourceManager.GetObject("ExitDoor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Дали сте сигурни дека сакате да излезите од играта?.
         /// </summary>
         internal static string exitMessage {
@@ -157,6 +167,16 @@ namespace FinkiEscapa.Properties {
         internal static System.Drawing.Bitmap icon_null {
             get {
                 object obj = ResourceManager.GetObject("icon-null", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap keypad {
+            get {
+                object obj = ResourceManager.GetObject("keypad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
