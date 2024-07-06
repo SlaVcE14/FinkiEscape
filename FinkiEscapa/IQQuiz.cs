@@ -78,6 +78,11 @@ namespace FinkiEscapa
                 selectedAnswer.BackColor = Color.Red;
             }
 
+            answer1.Enabled = false;
+            answer2.Enabled = false;
+            answer3.Enabled = false;
+            answer4.Enabled = false;
+
             timer.Start();
         }
 
@@ -95,6 +100,11 @@ namespace FinkiEscapa
             answer2.BackColor = SystemColors.Control;
             answer3.BackColor = SystemColors.Control;
             answer4.BackColor = SystemColors.Control;
+
+            answer1.Enabled = true;
+            answer2.Enabled = true;
+            answer3.Enabled = true;
+            answer4.Enabled = true;
         }
 
 
