@@ -125,6 +125,7 @@
             this.exitBtn.TabStop = false;
             this.exitBtn.Text = "Излез";
             this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Visible = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // Classroom

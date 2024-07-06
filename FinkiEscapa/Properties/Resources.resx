@@ -181,4 +181,8 @@
   <data name="wireConnect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wireConnect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="codeMessage" xml:space="preserve">
+    <value>Успешно ги завршивте сите игри. 
+Кодот за излез е: {0}</value>
+  </data>
 </root>

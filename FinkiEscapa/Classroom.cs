@@ -134,6 +134,9 @@ namespace FinkiEscapa
             }
         }
 
-
+        internal void showExitBtn()
+        {
+            exitBtn.Visible = true;
+        }
     }
 }

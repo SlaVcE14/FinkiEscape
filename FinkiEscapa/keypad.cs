@@ -14,7 +14,7 @@ namespace FinkiEscapa
     {
 
         GameForm main;
-        string code = "1234";
+        public string code = "1234";
         int codeLenght = 4;
         string codeEntered = "";
 

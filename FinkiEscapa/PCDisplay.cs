@@ -16,7 +16,7 @@ namespace FinkiEscapa
         GameForm main;
         bool[] gameFinished = new bool[6];
         List<string> gameNames = new List<string>();
-
+        bool allGamesFinished = false;
 
 
         public PCDisplay(GameForm main)
@@ -28,7 +28,7 @@ namespace FinkiEscapa
             this.main = main;
             Visible = false;
             init();
-            
+
             //Debug mode 
             //------------------------------------
             //gameFinished[0] = true;
@@ -100,7 +100,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -114,7 +113,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -131,7 +129,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -153,7 +150,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -177,7 +173,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -193,7 +188,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -201,8 +195,12 @@ namespace FinkiEscapa
             {
                 return;
             }
-            finishedMessage(5);
+            
             gameFinished[5] = true;
+            codeMessage();
+
+            main.classRoom.showExitBtn();
+
         }
 
         private bool isGameFinished(int id)
@@ -218,8 +216,6 @@ namespace FinkiEscapa
 
         private void notFinishedMessage(int id)
         {
-            //MessageBox.Show(string.Format(Properties.Resources.notFinishedGameMessage,gameNames[id]));
-
             string str = string.Format(Properties.Resources.notFinishedGameMessage, gameNames[id]);
 
             showDialog(str);
@@ -228,11 +224,16 @@ namespace FinkiEscapa
 
         private void finishedMessage(int id)
         {
-            //MessageBox.Show(string.Format(Properties.Resources.finishedGameMessage, gameNames[id]));
-
-
             string str = string.Format(Properties.Resources.finishedGameMessage, gameNames[id]);
 
+            showDialog(str);
+        }
+
+
+        private void codeMessage()
+        {
+            string str = string.Format(Properties.Resources.codeMessage, main.keypad.code);
+            allGamesFinished = true;
             showDialog(str);
         }
 
@@ -257,6 +258,13 @@ namespace FinkiEscapa
 
         private void dialogBtn_Click(object sender, EventArgs e)
         {
+
+            if (allGamesFinished)
+            {
+                goToClassroom();
+                return;
+            }
+
             pcDialog.Visible = false;
         }
     }

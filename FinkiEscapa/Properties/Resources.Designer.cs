@@ -71,6 +71,16 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Успешно ги завршивте сите игри. 
+        ///Кодот за излез е: {0}.
+        /// </summary>
+        internal static string codeMessage {
+            get {
+                return ResourceManager.GetString("codeMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ExitDoor {
