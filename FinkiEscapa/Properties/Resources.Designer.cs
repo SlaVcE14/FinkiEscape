@@ -117,7 +117,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to memory game.
+        ///   Looks up a localized string similar to game2.
         /// </summary>
         internal static string game2Name {
             get {
@@ -126,7 +126,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to game3.
+        ///   Looks up a localized string similar to Меморија.
         /// </summary>
         internal static string game3Name {
             get {
@@ -135,7 +135,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IQ Quiz.
+        ///   Looks up a localized string similar to IQ Квиз.
         /// </summary>
         internal static string game4Name {
             get {
