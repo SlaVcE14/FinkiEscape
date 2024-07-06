@@ -58,6 +58,12 @@
     <Compile Include="Classroom.Designer.cs">
       <DependentUpon>Classroom.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectWires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectWires.Designer.cs">
+      <DependentUpon>ConnectWires.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreditsScene.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Classroom.resx">
       <DependentUpon>Classroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectWires.resx">
+      <DependentUpon>ConnectWires.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreditsScene.resx">
       <DependentUpon>CreditsScene.cs</DependentUpon>
@@ -206,6 +215,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ExitDoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wireConnect.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

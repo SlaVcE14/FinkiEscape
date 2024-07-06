@@ -32,7 +32,6 @@ namespace FinkiEscapa
         private void button1_Click(object sender, EventArgs e)
         {
             goToClassRoom();
-            //button1.Enabled = false;
         }
 
         public void keyDown(KeyEventArgs e)
@@ -47,17 +46,30 @@ namespace FinkiEscapa
 
         private void powerSwitch_MouseClick(object sender, MouseEventArgs e)
         {
-            if(!main.isPowerOn)
+
+            if (main.isPowerOn)
+                return;
+
+            ConnectWires form = new ConnectWires();
+
+            if(form.ShowDialog() == DialogResult.OK)
             {
                 main.isPowerOn = true;
                 BackgroundImage = Properties.Resources.powerOn;
             }
-            else
-            {
-                main.isPowerOn = false;
-                BackgroundImage = Properties.Resources.powerOff;
-            }
-                
+
+
+            //if(!main.isPowerOn)
+            //{
+            //    main.isPowerOn = true;
+            //    BackgroundImage = Properties.Resources.powerOn;
+            //}
+            //else
+            //{
+            //    main.isPowerOn = false;
+            //    BackgroundImage = Properties.Resources.powerOff;
+            //}
+
         }
     }
 }
