@@ -14,7 +14,7 @@ namespace FinkiEscapa
     {
 
         GameForm main;
-        int code = 1234;
+        
 
 
         public Exit(GameForm main)
