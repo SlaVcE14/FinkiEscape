@@ -106,6 +106,12 @@
     <Compile Include="MainMenuScene.Designer.cs">
       <DependentUpon>MainMenuScene.cs</DependentUpon>
     </Compile>
+    <Compile Include="MemoryGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoryGame.Designer.cs">
+      <DependentUpon>MemoryGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="PCDisplay.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuScene.resx">
       <DependentUpon>MainMenuScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoryGame.resx">
+      <DependentUpon>MemoryGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PCDisplay.resx">
       <DependentUpon>PCDisplay.cs</DependentUpon>
