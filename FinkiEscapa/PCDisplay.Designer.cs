@@ -231,7 +231,7 @@
             // 
             this.game3Btn.BackColor = System.Drawing.Color.Transparent;
             this.game3Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.game3Btn.Image = global::FinkiEscapa.Properties.Resources.memotyIcon;
+            this.game3Btn.Image = global::FinkiEscapa.Properties.Resources.icon_null;
             this.game3Btn.Location = new System.Drawing.Point(180, 20);
             this.game3Btn.Name = "game3Btn";
             this.game3Btn.Size = new System.Drawing.Size(60, 60);
@@ -243,7 +243,7 @@
             // 
             this.game4Btn.BackColor = System.Drawing.Color.Transparent;
             this.game4Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.game4Btn.Image = global::FinkiEscapa.Properties.Resources.IQQuizIcon;
+            this.game4Btn.Image = global::FinkiEscapa.Properties.Resources.icon_null;
             this.game4Btn.Location = new System.Drawing.Point(260, 20);
             this.game4Btn.Name = "game4Btn";
             this.game4Btn.Size = new System.Drawing.Size(60, 60);

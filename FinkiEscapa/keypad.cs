@@ -74,7 +74,33 @@ namespace FinkiEscapa
 
         private void validCodeEntered()
         {
-            MessageBox.Show("Code is valid");
+            
+            main.stopGameTimer();
+
+            endPanel.Visible = true;
+            string time;
+
+
+            TimeSpan t = TimeSpan.FromSeconds(main.timePlayed);
+            
+            if (main.timePlayed <= 60)
+                time = string.Format("{0} секунди", main.timePlayed);
+            else if (main.timePlayed <= 3600)
+            {
+                time = string.Format("{0} мин. и {1} секунди",
+                t.Minutes,
+                t.Seconds);
+            }
+            else
+            {
+                time = string.Format("{0} часа, {1} мин. и {2} секунди",
+                t.Hours,
+                t.Minutes,
+                t.Seconds);
+            }
+           
+            timeTxt.Text = String.Format("Играта ја завршивте за \n" + time);
+
         }
 
         private void invalidCodeEntered()
@@ -87,6 +113,11 @@ namespace FinkiEscapa
         private void updateDisplay()
         {
             displayTxt.Text = codeEntered;
+        }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            main.exitGame();
         }
     }
 }

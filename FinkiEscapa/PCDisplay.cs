@@ -90,6 +90,9 @@ namespace FinkiEscapa
             game4Lbl.Text = gameNames[3];
             game5Lbl.Text = gameNames[4];
             game6Lbl.Text = gameNames[5];
+
+            game3Btn.Image = Properties.Resources.memotyIcon;
+            game4Btn.Image = Properties.Resources.IQQuizIcon;
         }
 
         private void game1Btn_Click(object sender, EventArgs e)

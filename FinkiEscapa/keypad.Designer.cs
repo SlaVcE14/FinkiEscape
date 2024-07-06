@@ -42,6 +42,11 @@
             this.btn0 = new System.Windows.Forms.PictureBox();
             this.btnDel = new System.Windows.Forms.PictureBox();
             this.displayTxt = new System.Windows.Forms.Label();
+            this.endPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.exitBtn = new System.Windows.Forms.Button();
+            this.timeTxt = new System.Windows.Forms.Label();
+            this.endTxt = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btn1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn3)).BeginInit();
@@ -54,6 +59,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDel)).BeginInit();
+            this.endPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // backBtn
@@ -211,11 +218,71 @@
             this.displayTxt.TabIndex = 17;
             this.displayTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // endPanel
+            // 
+            this.endPanel.BackColor = System.Drawing.Color.Transparent;
+            this.endPanel.Controls.Add(this.panel2);
+            this.endPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.endPanel.Location = new System.Drawing.Point(0, 0);
+            this.endPanel.Name = "endPanel";
+            this.endPanel.Size = new System.Drawing.Size(1150, 660);
+            this.endPanel.TabIndex = 18;
+            this.endPanel.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.BackgroundImage = global::FinkiEscapa.Properties.Resources.endBoxBg;
+            this.panel2.Controls.Add(this.exitBtn);
+            this.panel2.Controls.Add(this.timeTxt);
+            this.panel2.Controls.Add(this.endTxt);
+            this.panel2.Location = new System.Drawing.Point(287, 71);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(525, 460);
+            this.panel2.TabIndex = 0;
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.exitBtn.Location = new System.Drawing.Point(183, 381);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(144, 57);
+            this.exitBtn.TabIndex = 5;
+            this.exitBtn.Text = "Излез";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
+            // timeTxt
+            // 
+            this.timeTxt.BackColor = System.Drawing.Color.Transparent;
+            this.timeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeTxt.Location = new System.Drawing.Point(25, 247);
+            this.timeTxt.Name = "timeTxt";
+            this.timeTxt.Size = new System.Drawing.Size(473, 92);
+            this.timeTxt.TabIndex = 0;
+            this.timeTxt.Text = "Играта ја завршивте за 0 мин.\r\n";
+            this.timeTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // endTxt
+            // 
+            this.endTxt.BackColor = System.Drawing.Color.Transparent;
+            this.endTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.endTxt.Location = new System.Drawing.Point(25, 31);
+            this.endTxt.Name = "endTxt";
+            this.endTxt.Size = new System.Drawing.Size(473, 152);
+            this.endTxt.TabIndex = 0;
+            this.endTxt.Text = "Честитам..\r\nУспешно побегнавте од просторијата\r\n";
+            this.endTxt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Keypad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FinkiEscapa.Properties.Resources.keypad;
+            this.Controls.Add(this.endPanel);
             this.Controls.Add(this.displayTxt);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.btn2);
@@ -244,6 +311,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDel)).EndInit();
+            this.endPanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -264,5 +333,10 @@
         private System.Windows.Forms.PictureBox btn0;
         private System.Windows.Forms.PictureBox btnDel;
         private System.Windows.Forms.Label displayTxt;
+        private System.Windows.Forms.Panel endPanel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label timeTxt;
+        private System.Windows.Forms.Label endTxt;
+        private System.Windows.Forms.Button exitBtn;
     }
 }

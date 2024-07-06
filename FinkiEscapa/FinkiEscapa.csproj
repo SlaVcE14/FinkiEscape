@@ -225,5 +225,8 @@
   <ItemGroup>
     <None Include="Resources\IQQuizIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\endBoxBg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

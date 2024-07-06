@@ -83,6 +83,16 @@ namespace FinkiEscapa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap endBoxBg {
+            get {
+                object obj = ResourceManager.GetObject("endBoxBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ExitDoor {
             get {
                 object obj = ResourceManager.GetObject("ExitDoor", resourceCulture);
