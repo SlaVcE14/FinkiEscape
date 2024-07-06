@@ -46,9 +46,6 @@
             this.game3Btn = new System.Windows.Forms.PictureBox();
             this.game4Btn = new System.Windows.Forms.PictureBox();
             this.game1Btn = new System.Windows.Forms.PictureBox();
-            this.dialogPanel = new System.Windows.Forms.Panel();
-            this.soaceImg = new System.Windows.Forms.PictureBox();
-            this.dialogText = new System.Windows.Forms.Label();
             this.screen.SuspendLayout();
             this.pcDialog.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.game2Btn)).BeginInit();
@@ -57,8 +54,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.game3Btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.game4Btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1Btn)).BeginInit();
-            this.dialogPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.soaceImg)).BeginInit();
             this.SuspendLayout();
             // 
             // backBtb
@@ -96,7 +91,6 @@
             this.screen.Name = "screen";
             this.screen.Size = new System.Drawing.Size(875, 430);
             this.screen.TabIndex = 2;
-            this.screen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.screen_MouseClick);
             // 
             // pcDialog
             // 
@@ -237,7 +231,7 @@
             // 
             this.game3Btn.BackColor = System.Drawing.Color.Transparent;
             this.game3Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.game3Btn.Image = global::FinkiEscapa.Properties.Resources.icon_null;
+            this.game3Btn.Image = global::FinkiEscapa.Properties.Resources.memotyIcon;
             this.game3Btn.Location = new System.Drawing.Point(180, 20);
             this.game3Btn.Name = "game3Btn";
             this.game3Btn.Size = new System.Drawing.Size(60, 60);
@@ -249,7 +243,7 @@
             // 
             this.game4Btn.BackColor = System.Drawing.Color.Transparent;
             this.game4Btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.game4Btn.Image = global::FinkiEscapa.Properties.Resources.icon_null;
+            this.game4Btn.Image = global::FinkiEscapa.Properties.Resources.IQQuizIcon;
             this.game4Btn.Location = new System.Drawing.Point(260, 20);
             this.game4Btn.Name = "game4Btn";
             this.game4Btn.Size = new System.Drawing.Size(60, 60);
@@ -269,46 +263,6 @@
             this.game1Btn.TabStop = false;
             this.game1Btn.Click += new System.EventHandler(this.game1Btn_Click);
             // 
-            // dialogPanel
-            // 
-            this.dialogPanel.BackColor = System.Drawing.Color.Transparent;
-            this.dialogPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.dialogPanel.Controls.Add(this.soaceImg);
-            this.dialogPanel.Controls.Add(this.dialogText);
-            this.dialogPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dialogPanel.Location = new System.Drawing.Point(0, 0);
-            this.dialogPanel.Name = "dialogPanel";
-            this.dialogPanel.Size = new System.Drawing.Size(1150, 660);
-            this.dialogPanel.TabIndex = 7;
-            this.dialogPanel.Visible = false;
-            this.dialogPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dialogPanel_MouseClick);
-            // 
-            // soaceImg
-            // 
-            this.soaceImg.BackColor = System.Drawing.Color.Transparent;
-            this.soaceImg.Image = ((System.Drawing.Image)(resources.GetObject("soaceImg.Image")));
-            this.soaceImg.Location = new System.Drawing.Point(960, 493);
-            this.soaceImg.Name = "soaceImg";
-            this.soaceImg.Size = new System.Drawing.Size(165, 49);
-            this.soaceImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.soaceImg.TabIndex = 2;
-            this.soaceImg.TabStop = false;
-            // 
-            // dialogText
-            // 
-            this.dialogText.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dialogText.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dialogText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dialogText.ForeColor = System.Drawing.SystemColors.Info;
-            this.dialogText.Location = new System.Drawing.Point(0, 552);
-            this.dialogText.Margin = new System.Windows.Forms.Padding(20);
-            this.dialogText.Name = "dialogText";
-            this.dialogText.Padding = new System.Windows.Forms.Padding(20);
-            this.dialogText.Size = new System.Drawing.Size(1150, 108);
-            this.dialogText.TabIndex = 0;
-            this.dialogText.Text = "Dialog text";
-            this.dialogText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // PCDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,7 +270,6 @@
             this.BackgroundImage = global::FinkiEscapa.Properties.Resources.pcMonitor;
             this.Controls.Add(this.screen);
             this.Controls.Add(this.backBtb);
-            this.Controls.Add(this.dialogPanel);
             this.Name = "PCDisplay";
             this.Size = new System.Drawing.Size(1150, 660);
             this.VisibleChanged += new System.EventHandler(this.PCDisplay_VisibleChanged);
@@ -328,8 +281,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.game3Btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.game4Btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1Btn)).EndInit();
-            this.dialogPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.soaceImg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -349,9 +300,6 @@
         private System.Windows.Forms.PictureBox game3Btn;
         private System.Windows.Forms.PictureBox game4Btn;
         private System.Windows.Forms.PictureBox game1Btn;
-        private System.Windows.Forms.Panel dialogPanel;
-        private System.Windows.Forms.PictureBox soaceImg;
-        private System.Windows.Forms.Label dialogText;
         private System.Windows.Forms.Panel pcDialog;
         private System.Windows.Forms.Button dialogBtn;
         private System.Windows.Forms.Label dialogMsg;

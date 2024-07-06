@@ -56,10 +56,7 @@ namespace FinkiEscapa
 
         public void keyDown(KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Space && dialogPanel.Visible)
-            {
-                dialogPanel.Visible = false;
-            }
+
         }
 
         private void PCDisplay_VisibleChanged(object sender, EventArgs e)
@@ -93,7 +90,6 @@ namespace FinkiEscapa
             game4Lbl.Text = gameNames[3];
             game5Lbl.Text = gameNames[4];
             game6Lbl.Text = gameNames[5];
-            dialogPanel.BackColor = Color.FromArgb(100, Color.Black);
         }
 
         private void game1Btn_Click(object sender, EventArgs e)
@@ -243,17 +239,6 @@ namespace FinkiEscapa
             dialogMsg.Text = message;
             pcDialog.Visible = true;
 
-        }
-
-        private void dialogPanel_MouseClick(object sender, MouseEventArgs e)
-        {
-            dialogPanel.Visible = false;
-        }
-
-        private void screen_MouseClick(object sender, MouseEventArgs e)
-        {
-            if(dialogPanel.Visible)
-                dialogPanel.Visible = false;
         }
 
         private void dialogBtn_Click(object sender, EventArgs e)
