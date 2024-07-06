@@ -306,7 +306,9 @@
             this.ClientSize = new System.Drawing.Size(534, 511);
             this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.MaximizeBox = false;
             this.Name = "MemoryGame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Меморија";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

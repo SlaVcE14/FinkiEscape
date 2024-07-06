@@ -119,7 +119,9 @@
             this.Controls.Add(this.answer1);
             this.Controls.Add(this.counter);
             this.Controls.Add(this.questionTxt);
+            this.MaximizeBox = false;
             this.Name = "IQQuiz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "IQQuiz";
             this.ResumeLayout(false);
 

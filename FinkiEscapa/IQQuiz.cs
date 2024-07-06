@@ -28,8 +28,9 @@ namespace FinkiEscapa
         public IQQuiz()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             init();
-            timer = new System.Timers.Timer(1500);
+            timer = new System.Timers.Timer(800);
             timer.Elapsed += OnTimedEvent;
             timer.AutoReset = false;
             nextQuestion();

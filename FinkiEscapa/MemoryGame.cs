@@ -26,6 +26,7 @@ namespace FinkiEscapa
         public MemoryGame()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             AssignRandomImages();
         }
 
