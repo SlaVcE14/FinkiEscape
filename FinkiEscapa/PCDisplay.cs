@@ -139,8 +139,14 @@ namespace FinkiEscapa
             {
                 return;
             }
-            finishedMessage(2);
-            gameFinished[2] = true;
+            
+            MemoryGame game = new MemoryGame();
+
+            if (game.ShowDialog() == DialogResult.OK)
+            {
+                finishedMessage(2);
+                gameFinished[2] = true;
+            }
         }
 
         private void game4Btn_Click(object sender, EventArgs e)
