@@ -122,7 +122,7 @@
             this.MaximizeBox = false;
             this.Name = "IQQuiz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "IQQuiz";
+            this.Text = "IQ Квиз";
             this.ResumeLayout(false);
 
         }
