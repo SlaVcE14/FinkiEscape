@@ -29,17 +29,6 @@ namespace FinkiEscapa
             Visible = false;
             init();
 
-            //Debug mode 
-            //------------------------------------
-            //gameFinished[0] = true;
-            //gameFinished[1] = true;
-            //gameFinished[2] = true;
-            //gameFinished[3] = true;
-            //gameFinished[4] = true;
-            //gameFinished[5] = true;
-            //main.isPowerOn = true;
-            //------------------------------------
-
         }
 
         private void goToClassroom()
