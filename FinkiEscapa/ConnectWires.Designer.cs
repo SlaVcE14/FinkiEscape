@@ -39,7 +39,7 @@
             this.MaximizeBox = false;
             this.Name = "ConnectWires";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "ConnectWires";
+            this.Text = "Разводна табла";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.ConnectWires_Paint);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ConnectWires_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ConnectWires_MouseMove);

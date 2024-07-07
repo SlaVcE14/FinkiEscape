@@ -21,16 +21,17 @@ namespace FinkiEscapa
         static Rectangle y2Area = new Rectangle(466, 168, 15, 15);
         static Rectangle r2Area = new Rectangle(466, 243, 15, 15);
 
+        List<Rectangle> rectangles = new List<Rectangle>{ r1Area, b1Area, y1Area, r2Area, b2Area, y2Area};
+
+        Color[] colors = { Color.FromArgb(224, 27, 34), Color.FromArgb(0, 114, 188), Color.FromArgb(225, 199, 26) };
+
 
         bool[] drawnLine = new bool[3];
-
-        List<Rectangle> rectangles = new List<Rectangle>{ r1Area, b1Area, y1Area, r2Area, b2Area, y2Area};
-        Color[] colors = { Color.FromArgb(224, 27, 34), Color.FromArgb(0, 114, 188), Color.FromArgb(225, 199, 26) };
         int currentIndex = -1;
         Point[] points = new Point[2];
         List<Point[]> lines = new List<Point[]>();
         
-        bool drawLine;
+        bool connectingWiresStarted;
 
         public ConnectWires()
         {
@@ -56,7 +57,7 @@ namespace FinkiEscapa
                 e.Graphics.DrawLine(new Pen(colors[2], 15), lines[2][0], lines[2][1]);
             }
 
-            if (drawLine)
+            if (connectingWiresStarted)
                 e.Graphics.DrawLine(new Pen(colors[currentIndex],15), points[0], points[1]);
 
             Invalidate();
@@ -67,14 +68,14 @@ namespace FinkiEscapa
         {
             Rectangle rect = isOnTarget(e.Location);
 
-            if (!drawLine && isStartPos(rect))
+            if (!connectingWiresStarted && isStartPos(rect))
             {
                 currentIndex = rectangles.IndexOf(rect);
 
                 if (drawnLine[currentIndex])
                     return;
 
-                drawLine = true;
+                connectingWiresStarted = true;
 
                 points[0] = rect.Location;
                 points[0].Offset(7, 7);
@@ -85,7 +86,7 @@ namespace FinkiEscapa
             if (isEndPos(rect) && rect == rectangles[currentIndex + 3])
             {
                 drawnLine[currentIndex] = true;
-                drawLine = false;
+                connectingWiresStarted = false;
                 isFinished();
             }
 
