@@ -38,7 +38,7 @@
             this.MaximizeBox = false;
             this.Name = "MainScene";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Finki Escape";
+            this.Text = "FinkiEscape - Main menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainScene_FormClosed);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainScene_KeyDown);
             this.ResumeLayout(false);

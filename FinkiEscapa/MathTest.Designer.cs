@@ -300,7 +300,7 @@
             this.MaximizeBox = false;
             this.Name = "MathTest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MathTest";
+            this.Text = "Математика";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MathTest_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
