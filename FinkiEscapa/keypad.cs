@@ -14,14 +14,15 @@ namespace FinkiEscapa
     {
 
         GameForm main;
-        public string code = "1234";
-        int codeLenght = 4;
+        public string code = "123456";
+        int codeLenght = 6;
         string codeEntered = "";
 
 
         public Keypad(GameForm main)
         {
             InitializeComponent();
+            generateCode();
 
             this.main = main;
             Visible = false;
@@ -118,6 +119,11 @@ namespace FinkiEscapa
         private void exitBtn_Click(object sender, EventArgs e)
         {
             main.exitGame();
+        }
+
+        private void generateCode()
+        {
+			code = new Random().Next(100000,999999).ToString();
         }
     }
 }
