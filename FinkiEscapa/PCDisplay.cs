@@ -93,6 +93,7 @@ namespace FinkiEscapa
 
             game3Btn.Image = Properties.Resources.memotyIcon;
             game4Btn.Image = Properties.Resources.IQQuizIcon;
+            game5Btn.Image = Properties.Resources.puzzleIcon;
         }
 
         private void game1Btn_Click(object sender, EventArgs e)
