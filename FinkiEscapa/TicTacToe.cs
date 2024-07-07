@@ -42,7 +42,11 @@ namespace FinkiEscapa
                     playerTurn = false;
                     if (movesLeft(board))
                     {
+                        enableButtons(false);
+                        Cursor.Current = Cursors.WaitCursor;
                         ComputerMove();
+                        enableButtons(true);
+                        Cursor.Current = Cursors.Default;
                     }
                     else
                     {
@@ -76,6 +80,18 @@ namespace FinkiEscapa
                 }
             }
 
+        }
+
+        private void enableButtons(bool enable) 
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    board[i, j].Enabled = enable;
+                }
+
+            }
         }
 
         private bool CheckWin(char player)
@@ -146,6 +162,7 @@ namespace FinkiEscapa
 
         private void ComputerMove()
         {
+
             int bestScore = -1000;
             int moveRow = -1;
             int moveCol = -1;
