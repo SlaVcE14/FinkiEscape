@@ -102,7 +102,7 @@ namespace FinkiEscapa
         {
             bool isPass = numCorrect >= numCorrectToPass;
 
-            MessageBox.Show(String.Format("Одговоривте точно на {0} од {1} прашања. {2}", numCorrect, numQestions, isPass?"Ја завршивте овва игра":"Не го поминавте квизот!"));
+            MessageBox.Show(String.Format("Одговоривте точно на {0} од {1} прашања. {2}", numCorrect, numQestions, isPass?"Ја завршивте овва игра":"Не го поминавте квизот!"),"IQ Квиз",MessageBoxButtons.OK,MessageBoxIcon.Information);
             this.DialogResult = isPass? DialogResult.OK : DialogResult.Cancel;
         }
 

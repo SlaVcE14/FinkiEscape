@@ -185,8 +185,13 @@ namespace FinkiEscapa
             {
                 return;
             }
-            finishedMessage(4);
-            gameFinished[4] = true;
+            
+            SlidePuzzle puzzle = new SlidePuzzle();
+            if (puzzle.ShowDialog() == DialogResult.OK)
+            {
+                finishedMessage(4);
+                gameFinished[4] = true;
+            }
         }
 
         private void game6Btn_Click(object sender, EventArgs e)

@@ -99,7 +99,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ја завршивте &quot;{0}&quot; играта.
+        ///   Looks up a localized string similar to Го завршивте &quot;{0}&quot; нивото..
         /// </summary>
         internal static string finishedGameMessage {
             get {
@@ -108,7 +108,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to game1.
+        ///   Looks up a localized string similar to Левел 1.
         /// </summary>
         internal static string game1Name {
             get {
@@ -117,7 +117,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to game2.
+        ///   Looks up a localized string similar to Левел 2.
         /// </summary>
         internal static string game2Name {
             get {
@@ -126,7 +126,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Меморија.
+        ///   Looks up a localized string similar to Левел 3.
         /// </summary>
         internal static string game3Name {
             get {
@@ -135,7 +135,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to IQ Квиз.
+        ///   Looks up a localized string similar to Левел 4.
         /// </summary>
         internal static string game4Name {
             get {
@@ -144,7 +144,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to game5.
+        ///   Looks up a localized string similar to Левел 5.
         /// </summary>
         internal static string game5Name {
             get {
@@ -153,7 +153,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to game6.
+        ///   Looks up a localized string similar to Левел 6.
         /// </summary>
         internal static string game6Name {
             get {
@@ -202,7 +202,7 @@ namespace FinkiEscapa.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Треба прво да ја завршите &quot;{0}&quot; играта за да можете да го ја отворите оваа игра .
+        ///   Looks up a localized string similar to Треба прво да го завршите &quot;{0}&quot;, за да можете да го отворите овај левел. .
         /// </summary>
         internal static string notFinishedGameMessage {
             get {
