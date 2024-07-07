@@ -126,8 +126,14 @@ namespace FinkiEscapa
             {
                 return;
             }
-            finishedMessage(1);
-            gameFinished[1] = true;
+            
+            TicTacToe game = new TicTacToe();
+
+            if (game.ShowDialog() == DialogResult.OK)
+            {
+                finishedMessage(1);
+                gameFinished[1] = true;
+            }
         }
 
         private void game3Btn_Click(object sender, EventArgs e)
@@ -205,9 +211,13 @@ namespace FinkiEscapa
             {
                 return;
             }
-            
-            gameFinished[5] = true;
-            codeMessage();
+
+            BallGame game = new BallGame();
+            if (game.ShowDialog() == DialogResult.OK)
+            {
+                gameFinished[5] = true;
+                codeMessage();
+            }
 
             main.classRoom.showExitBtn();
 
