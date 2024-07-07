@@ -57,19 +57,6 @@ namespace FinkiEscapa
                 main.isPowerOn = true;
                 BackgroundImage = Properties.Resources.powerOn;
             }
-
-
-            //if(!main.isPowerOn)
-            //{
-            //    main.isPowerOn = true;
-            //    BackgroundImage = Properties.Resources.powerOn;
-            //}
-            //else
-            //{
-            //    main.isPowerOn = false;
-            //    BackgroundImage = Properties.Resources.powerOff;
-            //}
-
         }
     }
 }

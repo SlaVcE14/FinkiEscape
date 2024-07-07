@@ -12,7 +12,7 @@ namespace FinkiEscapa
 {
     public partial class ConnectWires : Form
     {
-        //Strat
+        //Start
         static Rectangle r1Area = new Rectangle(118, 93, 15, 15);
         static Rectangle b1Area = new Rectangle(118, 168, 15, 15);
         static Rectangle y1Area = new Rectangle(118, 243, 15, 15);
