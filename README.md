@@ -84,10 +84,10 @@
 ## Објаснување на класата [ConnectWires](FinkiEscapa/ConnectWires.cs)
 се чуваат во `Rectangle` променливи за позициите на почетната и крајната област на жиците каде што може да се кликне со гчувчето.
 ```c#
-//Strat
+//Start
 static Rectangle r1Area = new Rectangle(118, 93, 15, 15);
 static Rectangle b1Area = new Rectangle(118, 168, 15, 15);
-tatic Rectangle y1Area = new Rectangle(118, 243, 15, 15);
+static Rectangle y1Area = new Rectangle(118, 243, 15, 15);
 //End
 static Rectangle b2Area = new Rectangle(466, 93, 15, 15);
 static Rectangle y2Area = new Rectangle(466, 168, 15, 15);
