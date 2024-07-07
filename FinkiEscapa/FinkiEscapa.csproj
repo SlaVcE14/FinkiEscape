@@ -126,13 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="SlidePuzzle.cs" />
-=======
     <Compile Include="SlidePuzzle.cs">
       <SubType>Form</SubType>
     </Compile>
->>>>>>> test2
     <Compile Include="SlidePuzzle.Designer.cs">
       <DependentUpon>SlidePuzzle.cs</DependentUpon>
     </Compile>
