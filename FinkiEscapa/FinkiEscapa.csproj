@@ -228,5 +228,8 @@
   <ItemGroup>
     <None Include="Resources\wireConnect.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puzzleIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
