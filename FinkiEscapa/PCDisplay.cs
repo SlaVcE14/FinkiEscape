@@ -91,6 +91,7 @@ namespace FinkiEscapa
             game5Lbl.Text = gameNames[4];
             game6Lbl.Text = gameNames[5];
 
+            game1Btn.Image = Properties.Resources.mathTestIcon;
             game3Btn.Image = Properties.Resources.memotyIcon;
             game4Btn.Image = Properties.Resources.IQQuizIcon;
             game5Btn.Image = Properties.Resources.puzzleIcon;
@@ -103,9 +104,13 @@ namespace FinkiEscapa
                 return;
             }
 
-            //todo open game1
-            finishedMessage(0);
-            gameFinished[0] = true;
+            MathTest game = new MathTest();
+
+            if (game.ShowDialog() == DialogResult.OK)
+            {
+                finishedMessage(0);
+                gameFinished[0] = true;
+            }
 
         }
 

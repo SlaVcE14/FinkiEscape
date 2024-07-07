@@ -112,6 +112,12 @@
     <Compile Include="MainMenuScene.Designer.cs">
       <DependentUpon>MainMenuScene.cs</DependentUpon>
     </Compile>
+    <Compile Include="MathTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathTest.Designer.cs">
+      <DependentUpon>MathTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="MemoryGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuScene.resx">
       <DependentUpon>MainMenuScene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathTest.resx">
+      <DependentUpon>MathTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemoryGame.resx">
       <DependentUpon>MemoryGame.cs</DependentUpon>
@@ -230,6 +239,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\puzzleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mathTestIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ballIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
