@@ -63,6 +63,16 @@ namespace FinkiEscapa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ballIcon {
+            get {
+                object obj = ResourceManager.GetObject("ballIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap classroom {
             get {
                 object obj = ResourceManager.GetObject("classroom", resourceCulture);
@@ -217,6 +227,16 @@ namespace FinkiEscapa.Properties {
         internal static System.Drawing.Bitmap mainMenuBg {
             get {
                 object obj = ResourceManager.GetObject("mainMenuBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mathTestIcon {
+            get {
+                object obj = ResourceManager.GetObject("mathTestIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
