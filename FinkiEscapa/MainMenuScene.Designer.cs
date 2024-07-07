@@ -36,6 +36,7 @@
             // playBtn
             // 
             this.playBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.playBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.playBtn.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.playBtn.Location = new System.Drawing.Point(68, 188);
@@ -49,6 +50,7 @@
             // howToPlayBtn
             // 
             this.howToPlayBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.howToPlayBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.howToPlayBtn.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.howToPlayBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.howToPlayBtn.Location = new System.Drawing.Point(68, 301);
@@ -62,6 +64,7 @@
             // creditsBtn
             // 
             this.creditsBtn.BackColor = System.Drawing.SystemColors.Desktop;
+            this.creditsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.creditsBtn.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creditsBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.creditsBtn.Location = new System.Drawing.Point(68, 422);
