@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Classroom));
             this.dialogText = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pcBtn = new System.Windows.Forms.PictureBox();
@@ -93,10 +92,10 @@
             // spaceImg
             // 
             this.spaceImg.BackColor = System.Drawing.Color.Transparent;
-            this.spaceImg.Image = ((System.Drawing.Image)(resources.GetObject("spaceImg.Image")));
-            this.spaceImg.Location = new System.Drawing.Point(1021, 492);
+            this.spaceImg.Image = global::FinkiEscapa.Properties.Resources.space;
+            this.spaceImg.Location = new System.Drawing.Point(1006, 530);
             this.spaceImg.Name = "spaceImg";
-            this.spaceImg.Size = new System.Drawing.Size(109, 49);
+            this.spaceImg.Size = new System.Drawing.Size(110, 41);
             this.spaceImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.spaceImg.TabIndex = 2;
             this.spaceImg.TabStop = false;
@@ -125,6 +124,7 @@
             this.exitBtn.TabStop = false;
             this.exitBtn.Text = "Излез";
             this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Visible = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // Classroom

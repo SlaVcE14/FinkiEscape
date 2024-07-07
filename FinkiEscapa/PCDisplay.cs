@@ -16,7 +16,7 @@ namespace FinkiEscapa
         GameForm main;
         bool[] gameFinished = new bool[6];
         List<string> gameNames = new List<string>();
-
+        bool allGamesFinished = false;
 
 
         public PCDisplay(GameForm main)
@@ -28,7 +28,7 @@ namespace FinkiEscapa
             this.main = main;
             Visible = false;
             init();
-            
+
             //Debug mode 
             //------------------------------------
             //gameFinished[0] = true;
@@ -56,10 +56,7 @@ namespace FinkiEscapa
 
         public void keyDown(KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Space && dialogPanel.Visible)
-            {
-                dialogPanel.Visible = false;
-            }
+
         }
 
         private void PCDisplay_VisibleChanged(object sender, EventArgs e)
@@ -93,14 +90,15 @@ namespace FinkiEscapa
             game4Lbl.Text = gameNames[3];
             game5Lbl.Text = gameNames[4];
             game6Lbl.Text = gameNames[5];
-            dialogPanel.BackColor = Color.FromArgb(100, Color.Black);
+
+            game3Btn.Image = Properties.Resources.memotyIcon;
+            game4Btn.Image = Properties.Resources.IQQuizIcon;
         }
 
         private void game1Btn_Click(object sender, EventArgs e)
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -114,7 +112,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -131,7 +128,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -153,7 +149,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -177,7 +172,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -193,7 +187,6 @@ namespace FinkiEscapa
         {
             if (pcDialog.Visible)
             {
-                pcDialog.Visible = false;
                 return;
             }
 
@@ -201,8 +194,12 @@ namespace FinkiEscapa
             {
                 return;
             }
-            finishedMessage(5);
+            
             gameFinished[5] = true;
+            codeMessage();
+
+            main.classRoom.showExitBtn();
+
         }
 
         private bool isGameFinished(int id)
@@ -218,8 +215,6 @@ namespace FinkiEscapa
 
         private void notFinishedMessage(int id)
         {
-            //MessageBox.Show(string.Format(Properties.Resources.notFinishedGameMessage,gameNames[id]));
-
             string str = string.Format(Properties.Resources.notFinishedGameMessage, gameNames[id]);
 
             showDialog(str);
@@ -228,11 +223,16 @@ namespace FinkiEscapa
 
         private void finishedMessage(int id)
         {
-            //MessageBox.Show(string.Format(Properties.Resources.finishedGameMessage, gameNames[id]));
-
-
             string str = string.Format(Properties.Resources.finishedGameMessage, gameNames[id]);
 
+            showDialog(str);
+        }
+
+
+        private void codeMessage()
+        {
+            string str = string.Format(Properties.Resources.codeMessage, main.keypad.code);
+            allGamesFinished = true;
             showDialog(str);
         }
 
@@ -244,19 +244,15 @@ namespace FinkiEscapa
 
         }
 
-        private void dialogPanel_MouseClick(object sender, MouseEventArgs e)
-        {
-            dialogPanel.Visible = false;
-        }
-
-        private void screen_MouseClick(object sender, MouseEventArgs e)
-        {
-            if(dialogPanel.Visible)
-                dialogPanel.Visible = false;
-        }
-
         private void dialogBtn_Click(object sender, EventArgs e)
         {
+
+            if (allGamesFinished)
+            {
+                goToClassroom();
+                return;
+            }
+
             pcDialog.Visible = false;
         }
     }

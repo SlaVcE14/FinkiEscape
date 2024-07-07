@@ -20,6 +20,7 @@ namespace FinkiEscapa
         public Keypad keypad;
 
         public bool isPowerOn = false;
+        public int timePlayed = 0;
         
 
         public GameForm()
@@ -49,13 +50,10 @@ namespace FinkiEscapa
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void gameTimer_Tick(object sender, EventArgs e)
         {
-            //if(startMsgId < StringData.startGameDialogs.Count) 
-            //{
-            //    label1.Text = StringData.startGameDialogs[startMsgId];
-            //    startMsgId++;
-            //}
+            timePlayed++;
+            
         }
 
 
@@ -74,9 +72,7 @@ namespace FinkiEscapa
                 DialogResult dialogResult = MessageBox.Show(Properties.Resources.exitMessage, Properties.Resources.exitMessageTitle, MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    MainScene scene = new MainScene();
-                    Hide();
-                    scene.Show();
+                    exitGame();
 
                 }
             }
@@ -103,9 +99,17 @@ namespace FinkiEscapa
                 keypad.keyDown(e);
         }
 
-        private void GameForm_KeyPress(object sender, KeyPressEventArgs e)
+        public void exitGame()
         {
-
+            MainScene scene = new MainScene();
+            Hide();
+            scene.Show();
         }
+
+        public void stopGameTimer()
+        {
+            gameTimer.Enabled = false;  
+        }
+
     }
 }
