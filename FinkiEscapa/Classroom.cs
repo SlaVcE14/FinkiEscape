@@ -67,19 +67,6 @@ namespace FinkiEscapa
             goToPCDisplay();
         }
 
-
-        private void panel1_MouseClick(object sender, MouseEventArgs e)
-        {
-
-
-            //panel1.Visible = false;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //nextDialog();
-        }
-
         private void showPowerOffDialog()
         {
             dialogs = new List<string>(StringData.powerOffDialog);
