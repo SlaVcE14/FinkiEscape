@@ -19,6 +19,7 @@ namespace FinkiEscapa
         public MathTest()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             KeyPreview = true;
             
             init();

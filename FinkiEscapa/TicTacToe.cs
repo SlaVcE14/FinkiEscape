@@ -20,6 +20,7 @@ namespace FinkiEscapa
         public TicTacToe()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeGame();
         }
 
@@ -36,7 +37,7 @@ namespace FinkiEscapa
                     {
                         isPass = true;
                         this.DialogResult = isPass ? DialogResult.OK : DialogResult.Cancel;
-                        Close();
+                        return;
                     }
                     playerTurn = false;
                     if (movesLeft(board))

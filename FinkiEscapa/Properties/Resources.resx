@@ -173,6 +173,9 @@
     <value>Успешно ги завршивте сите игри. 
 Кодот за излез е: {0}</value>
   </data>
+  <data name="ballIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ballIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="wireConnect" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wireConnect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -203,7 +206,7 @@
   <data name="mathTestIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mathTestIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ballIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ballIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ticTacToeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ticTacToeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

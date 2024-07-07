@@ -66,8 +66,9 @@
             this.Controls.Add(this.statusStrip1);
             this.MaximizeBox = false;
             this.Name = "BallGame";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Кругови";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BallGame_FormClosed);
             this.Load += new System.EventHandler(this.BallGame_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.BallGame_Paint);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.BallGame_MouseClick);

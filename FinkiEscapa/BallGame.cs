@@ -20,6 +20,7 @@ namespace FinkiEscapa
         public BallGame()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             this.DoubleBuffered = true;
             scene = new BallScene();
             random = new Random();
@@ -116,6 +117,10 @@ namespace FinkiEscapa
             Invalidate();
         }
 
-        
+        private void BallGame_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer1.Stop();
+            scene = null;
+        }
     }
 }

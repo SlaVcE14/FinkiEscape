@@ -17,6 +17,7 @@ namespace FinkiEscapa
         public SlidePuzzle()
         {
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void checkEmptySpot(Button btn1, Button btn2)

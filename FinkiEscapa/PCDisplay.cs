@@ -92,9 +92,12 @@ namespace FinkiEscapa
             game6Lbl.Text = gameNames[5];
 
             game1Btn.Image = Properties.Resources.mathTestIcon;
-            game3Btn.Image = Properties.Resources.memotyIcon;
+            game2Btn.Image = Properties.Resources.ticTacToeIcon;
+            game3Btn.Image = Properties.Resources.ballIcon;
             game4Btn.Image = Properties.Resources.IQQuizIcon;
-            game5Btn.Image = Properties.Resources.puzzleIcon;
+            game5Btn.Image = Properties.Resources.memotyIcon;
+            game6Btn.Image = Properties.Resources.puzzleIcon;
+
         }
 
         private void game1Btn_Click(object sender, EventArgs e)
@@ -148,7 +151,7 @@ namespace FinkiEscapa
                 return;
             }
             
-            MemoryGame game = new MemoryGame();
+            BallGame game = new BallGame();
 
             if (game.ShowDialog() == DialogResult.OK)
             {
@@ -192,8 +195,8 @@ namespace FinkiEscapa
                 return;
             }
             
-            SlidePuzzle puzzle = new SlidePuzzle();
-            if (puzzle.ShowDialog() == DialogResult.OK)
+            MemoryGame game = new MemoryGame();
+            if (game.ShowDialog() == DialogResult.OK)
             {
                 finishedMessage(4);
                 gameFinished[4] = true;
@@ -212,7 +215,7 @@ namespace FinkiEscapa
                 return;
             }
 
-            BallGame game = new BallGame();
+            SlidePuzzle game = new SlidePuzzle();
             if (game.ShowDialog() == DialogResult.OK)
             {
                 gameFinished[5] = true;

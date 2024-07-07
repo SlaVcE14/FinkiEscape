@@ -155,7 +155,7 @@
             this.Controls.Add(this.btn1);
             this.MaximizeBox = false;
             this.Name = "TicTacToe";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "X/0";
             this.ResumeLayout(false);
 

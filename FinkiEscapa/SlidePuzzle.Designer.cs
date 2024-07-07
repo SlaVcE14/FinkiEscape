@@ -294,7 +294,7 @@
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.Name = "SlidePuzzle";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Сложувалка";
             this.Load += new System.EventHandler(this.SlidePuzzle_Load);
             this.panel1.ResumeLayout(false);
