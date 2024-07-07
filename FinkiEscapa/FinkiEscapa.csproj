@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ball.cs" />
+    <Compile Include="BallGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BallGame.Designer.cs">
+      <DependentUpon>BallGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BallScene.cs" />
     <Compile Include="BreakerBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -133,6 +141,15 @@
       <DependentUpon>SlidePuzzle.cs</DependentUpon>
     </Compile>
     <Compile Include="StringData.cs" />
+    <Compile Include="TicTacToe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicTacToe.Designer.cs">
+      <DependentUpon>TicTacToe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BallGame.resx">
+      <DependentUpon>BallGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BreakerBox.resx">
       <DependentUpon>BreakerBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +201,9 @@
     </Compile>
     <EmbeddedResource Include="SlidePuzzle.resx">
       <DependentUpon>SlidePuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicTacToe.resx">
+      <DependentUpon>TicTacToe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

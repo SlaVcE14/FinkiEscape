@@ -26,7 +26,6 @@ namespace FinkiEscapa
         {
             Visible = false;
             main.howToPlay.Visible = true;
-            
         }
 
         private void creditsBtn_Click(object sender, EventArgs e)
