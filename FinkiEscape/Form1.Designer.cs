@@ -35,6 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 656);
+            this.Icon = Properties.Resources.logo;
             this.MaximizeBox = false;
             this.Name = "MainScene";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
